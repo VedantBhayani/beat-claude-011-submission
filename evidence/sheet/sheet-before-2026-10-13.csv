@@ -1,0 +1,10 @@
+# Redacted export of the live queue Sheet ("Test sheet" / Sheet1), exported by the owner (file timestamp 2026-10-13 15:14 IST), before the end-to-end run.
+# Header row had 13 columns ending at "error"; there was no updated_at column.
+# post_text is replaced by its word count and the first 8 hex chars of sha256(trimmed text); equal fingerprints mean identical text.
+# Drive links are removed. Nothing else was changed.
+row,job_id,post_text_words,post_text_sha256_8,status,brief_file,carousel_file,render_attempts,draft_attempts,render_manifest,buffer_draft_id,buffer_draft_url,error
+Sheet1!2,test-001,2,a6e88777,archived,[non-link value],,,,,,,
+Sheet1!3,test-002,3,b5a1305f,archived,[drive link removed],,,,,,,
+Sheet1!4,launch-video-001,409,5b7eb867,render_failed,[drive link removed],[drive link removed],3,0,,,,external:unknown
+Sheet1!5,test-003,72,71e93a3c,draft_failed,[drive link removed],[drive link removed],1,1,cloudinary://test-003:1e7618b6b4a3ce6a720677e1985b1b2d4f06e6bba65ab5238853afd5e93ba363,,,data_integrity:invalid_render_manifest Stored render manifest is missing or invalid
+Sheet1!6,live-001,72,71e93a3c,draft_created,[drive link removed],[drive link removed],3,2,cloudinary://live-001:ea857c039488fcbf2627d0cdacc983bda1efde8be5da3f957a3135edbecc4e3b,6ac76e61deb9a4752cef8bdc,,

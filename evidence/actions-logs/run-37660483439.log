@@ -1,0 +1,7 @@
+# GitHub Actions run 37660483439: VedantBhayani/linkedin-carousel-factory, workflow "Render LinkedIn Carousel"
+# started: 2026-10-07T17:37:18Z  commit: 2b83f58  event: workflow_dispatch  conclusion: success
+# https://github.com/VedantBhayani/linkedin-carousel-factory/actions/runs/37660483439
+# Excerpt: worker output lines (this run's log labels every step "UNKNOWN STEP", so they were selected by content: lines starting with [worker] or the final outcome JSON, excluding test-runner lines that start with #), copied from 'gh run view 37660483439 --log'. GitHub masked secret values as ***.
+
+2026-10-07T17:38:30.5198702Z [worker] stage=render outcome=failed type=external code=unknown thrown=Object message= shape=***"request_options":***"protocol":"https:","hostname":"api.cloudinary.com","path":"/v1_1/***/resources/image/upload/carousel%2Flaunch-video-001%2Fc75d4ace13fc18679f251309b221fec5faba434c042a7c7b7244167fae2a6640%2Fcarousel-manifest","pathname":"/v1_1/***/resources/image/upload/carousel%2Flaunch-video-001%2Fc75d4ace13fc18679f251309b221fec5faba434c042a7c7b7244167fae2a6640%2Fcarousel-manifest","query":"","method":"GET","headers":***"Content-Type":"application/x-www-form-urlencoded","User-Agent"
+2026-10-07T17:38:30.7234446Z ***"outcome":"failed","error":"unknown"***

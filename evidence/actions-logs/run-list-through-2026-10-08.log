@@ -1,0 +1,36 @@
+# Workflow runs of "Render LinkedIn Carousel" up to 2026-10-08, captured 2026-10-13T12:52:42Z with:
+#   gh run list -R VedantBhayani/linkedin-carousel-factory --workflow linkedin-carousel-render.yml -L 100 --created '<=2026-10-08'
+# Columns: run id, created (UTC), event, conclusion, commit
+
+37763450842  2026-10-08T10:26:13Z  workflow_dispatch  success  3223afd
+37762672473  2026-10-08T10:19:07Z  workflow_dispatch  success  2ab5e66
+37762234520  2026-10-08T10:15:07Z  workflow_dispatch  success  a0bbba0
+37761794840  2026-10-08T10:11:08Z  workflow_dispatch  success  023ddf4
+37761246458  2026-10-08T10:06:16Z  workflow_dispatch  success  db7f132
+37759699610  2026-10-08T09:52:53Z  workflow_dispatch  success  379bf3a
+37758704857  2026-10-08T09:44:09Z  workflow_dispatch  success  379bf3a
+37736659011  2026-10-08T06:15:57Z  workflow_dispatch  success  6ea78ec
+37736480784  2026-10-08T06:13:59Z  workflow_dispatch  success  6ea78ec
+37735894619  2026-10-08T06:07:18Z  workflow_dispatch  success  6ea78ec
+37735537490  2026-10-08T06:03:21Z  workflow_dispatch  success  6ea78ec
+37734837640  2026-10-08T05:55:28Z  workflow_dispatch  success  6ea78ec
+37674747088  2026-10-07T19:28:28Z  workflow_dispatch  success  8fa671a
+37673808427  2026-10-07T19:21:01Z  workflow_dispatch  success  8fa671a
+37672624554  2026-10-07T19:11:43Z  workflow_dispatch  success  8fa671a
+37671577656  2026-10-07T19:03:25Z  workflow_dispatch  success  8fa671a
+37669611790  2026-10-07T18:48:10Z  workflow_dispatch  success  f22cd9f
+37668531130  2026-10-07T18:39:43Z  workflow_dispatch  success  24c1e30
+37667641713  2026-10-07T18:32:41Z  workflow_dispatch  cancelled  24c1e30
+37665175073  2026-10-07T18:13:34Z  workflow_dispatch  success  2af59e4
+37662984103  2026-10-07T17:56:38Z  workflow_dispatch  success  2af59e4
+37662281025  2026-10-07T17:51:14Z  workflow_dispatch  success  2af59e4
+37661706157  2026-10-07T17:46:49Z  workflow_dispatch  success  830787a
+37660483439  2026-10-07T17:37:18Z  workflow_dispatch  success  2b83f58
+37658107781  2026-10-07T17:19:00Z  workflow_dispatch  success  c32c6be
+37656274317  2026-10-07T17:05:05Z  workflow_dispatch  success  0c54633
+37655686201  2026-10-07T17:01:32Z  workflow_dispatch  startup_failure  f4dfbda
+37655578578  2026-10-07T17:01:02Z  workflow_dispatch  startup_failure  f4dfbda
+37655572934  2026-10-07T17:01:00Z  workflow_dispatch  startup_failure  f4dfbda
+37651559090  2026-10-07T16:22:54Z  push  failure  f4dfbda
+37635660861  2026-10-07T14:18:58Z  workflow_dispatch  success  1d353aa
+37633632286  2026-10-07T14:04:16Z  workflow_dispatch  failure  d53e330

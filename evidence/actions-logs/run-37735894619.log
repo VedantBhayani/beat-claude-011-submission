@@ -1,0 +1,7 @@
+# GitHub Actions run 37735894619: VedantBhayani/linkedin-carousel-factory, workflow "Render LinkedIn Carousel"
+# started: 2026-10-08T06:07:18Z  commit: 6ea78ec  event: workflow_dispatch  conclusion: success
+# https://github.com/VedantBhayani/linkedin-carousel-factory/actions/runs/37735894619
+# Excerpt: output of the "Run production worker" step, copied from 'gh run view 37735894619 --log'. GitHub masked secret values as ***.
+
+2026-10-08T06:08:29.3952110Z [worker] stage=render outcome=failed type=validation code=jobid_mismatch thrown=WorkerError message=JSON jobId  live-001 != queue jobId live-001 shape=***"name":"WorkerError","type":"validation","code":"jobid_mismatch"***
+2026-10-08T06:08:29.7591284Z ***"outcome":"failed","error":"jobid_mismatch"***

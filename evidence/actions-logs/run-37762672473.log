@@ -1,0 +1,7 @@
+# GitHub Actions run 37762672473: VedantBhayani/linkedin-carousel-factory, workflow "Render LinkedIn Carousel"
+# started: 2026-10-08T10:19:07Z  commit: 2ab5e66  event: workflow_dispatch  conclusion: success
+# https://github.com/VedantBhayani/linkedin-carousel-factory/actions/runs/37762672473
+# Excerpt: output of the "Run production worker" step, copied from 'gh run view 37762672473 --log'. GitHub masked secret values as ***.
+
+2026-10-08T10:20:17.7181616Z [worker] stage=draft outcome=failed type=external code=buffer_create_failed thrown=WorkerError message=Buffer rejected draft: unknown Buffer error shape=***"name":"WorkerError","type":"external","code":"buffer_create_failed"***
+2026-10-08T10:20:18.0351140Z ***"outcome":"failed","error":"buffer_create_failed"***

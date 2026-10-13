@@ -1,0 +1,7 @@
+# GitHub Actions run 37735537490: VedantBhayani/linkedin-carousel-factory, workflow "Render LinkedIn Carousel"
+# started: 2026-10-08T06:03:21Z  commit: 6ea78ec  event: workflow_dispatch  conclusion: success
+# https://github.com/VedantBhayani/linkedin-carousel-factory/actions/runs/37735537490
+# Excerpt: output of the "Run production worker" step, copied from 'gh run view 37735537490 --log'. GitHub masked secret values as ***.
+
+2026-10-08T06:04:31.3658466Z [worker] stage=render outcome=failed type=validation code=invalid_filename thrown=WorkerError message=Expected live-001-carousel-v1.json, got  live-001-carousel-v1.json shape=***"name":"WorkerError","type":"validation","code":"invalid_filename"***
+2026-10-08T06:04:31.5697326Z ***"outcome":"failed","error":"invalid_filename"***

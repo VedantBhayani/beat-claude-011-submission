@@ -1,0 +1,34 @@
+# Worker outcome inside each run that GitHub marked "success" (runs through 2026-10-08).
+# Derived from the cached 'gh run view <id> --log' output: the last "outcome" line printed by the worker,
+# excluding test-runner lines. 37635660861 predates the production worker step (tests only).
+
+37635660861 (no worker step: tests only)
+37656274317 "outcome":"failed"
+37658107781 "outcome":"failed"
+37660483439 "outcome":"failed"
+37661706157 "outcome":"failed"
+37662281025 "outcome":"idle"
+37662984103 "outcome":"idle"
+37665175073 "outcome":"failed"
+37668531130 "outcome":"failed"
+37669611790 "outcome":"failed"
+37671577656 "outcome":"failed"
+37672624554 "outcome":"idle"
+37673808427 "outcome":"failed"
+37674747088 "outcome":"idle"
+37734837640 "outcome":"idle"
+37735537490 "outcome":"failed"
+37735894619 "outcome":"failed"
+37736480784 "outcome":"failed"
+37736659011 "outcome":"failed"
+37758704857 "outcome":"failed"
+37759699610 "outcome":"failed"
+37761246458 "outcome":"failed"
+37761794840 "outcome":"failed"
+37762234520 "outcome":"failed"
+37762672473 "outcome":"failed"
+37763450842 "outcome":"draft_created"
+
+# Summary: 32 runs. 26 concluded success; inside them the worker logged failed 19x, idle 5x,
+# draft_created 1x, and 1 run had no worker step. The other 6 never ran the worker: 3 startup_failure,
+# 2 failure (one push-triggered, one before the production worker existed), 1 cancelled.
