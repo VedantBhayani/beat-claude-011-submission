@@ -5,7 +5,7 @@ Everything here runs on the real systems: ChatGPT scheduled tasks, Google Sheet 
 ## 0. Before the run
 - [ ] `fixes-2026-10-13` is merged to `master` in linkedin-carousel-factory. The workflow runs from `master`.
 - [ ] Both scheduled tasks use the **v2** prompts (`prompts/brief-builder.v2.md`, `prompts/carousel-json-builder.v2.md`). Note which product and model runs them.
-- [ ] Sheet row 1 has every worker header (see the product README). `updated_at` must exist.
+- [ ] Sheet row 1 has every worker header (see the product README). `updated_at` must exist. The export from 2026-10-13 stops at `error` (column M), so add `updated_at` in N1.
 - [ ] Buffer: count the existing `live-001` drafts and screenshot them **before** deleting anything → `evidence/bad-output/`.
 - [ ] Cloudinary: note whether "Allow delivery of PDF and ZIP files" is on, and when it was turned on.
 - [ ] Export the Sheet (job_id, status, error, updated_at; no post text needed) → `evidence/sheet-before.csv`.
