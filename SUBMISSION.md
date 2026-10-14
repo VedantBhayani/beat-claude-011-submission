@@ -1,8 +1,9 @@
-# My AI said "corrected and verified." It was wrong. Here's the agent that caught it.
+# LinkedIn carousel agent: from Sheet row to Buffer draft, with checks that stop it
 
-**Intern 011, Option D (my own workflow). Brief version: 2026-07.** Prototype: [linkedin-carousel-factory](https://github.com/VedantBhayani/linkedin-carousel-factory), pinned at commit [`2b69966`](https://github.com/VedantBhayani/linkedin-carousel-factory/tree/2b6996650bd61c0002c5d0f3135772cbead14347), the exact code behind all three test runs. Every claim below has a file in this repo you can open: see `EVIDENCE_LOG.md` and `evidence/`.
-
-**Watch it run (under 5 min):** [Loom demo](LOOM_LINK_HERE). A post goes from Sheet to Buffer draft, and the duplicate gets stopped.
+**Intern 011, Option D (my own workflow). Brief version: 2026-07.**
+- **Prototype:** [linkedin-carousel-factory](https://github.com/VedantBhayani/linkedin-carousel-factory/tree/2b6996650bd61c0002c5d0f3135772cbead14347) at commit `2b69966`, the code of all three test runs.
+- **Evidence:** [beat-claude-011-submission](https://github.com/VedantBhayani/beat-claude-011-submission). Every `evidence/` path below is there; `EVIDENCE_LOG.md` lists each claim with its source.
+- **Demo (under 5 min):** [Loom](LOOM_LINK_HERE).
 
 ## Written answer
 
@@ -104,7 +105,7 @@ The rule I used: if a mistake goes out under my name, or there's no safe default
 
 ## Artifact access
 
-No login needed, about 5 minutes [Estimated]. Clone the prototype at commit `2b69966` and run the lines below; the slides, PDF and cover land in `out/`. Edit the JSON to try your own copy. Want the live pipeline? I'll run a fresh post on a call.
+No login needed, about 5 minutes [Estimated]. Clone the prototype at commit `2b69966` and run the lines below; the slides, PDF and cover land in `out/`. Want the live pipeline? I'll run a fresh post on a call.
 
 ```
 npm ci
