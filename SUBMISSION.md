@@ -60,7 +60,7 @@ On both drafts, I read the caption against my post and went through all 8 slides
 
 ### Part 3: The meta question
 
-My most repetitive task was my legs. I'm tall and thin (30 waist, 34 length), and most brand sites seem sure nobody like me exists, because they have no length filter. So once a week [Estimated], I opened 2–3 brand sites, clicked into each pair of jeans or trousers (about 50 [Estimated]), picked 30 × 34, and usually found nothing, for 30–35 minutes each time [Estimated]. Now Aside, an AI browser, does the hunting and pings my phone and PC when my size is in stock. It finds the size; I still decide if the pair is worth it.
+Finding trousers that fit. I'm tall and thin (30 waist, 34 length), and most brand sites have no length filter, so the only way to check is to open every pair. Once a week [Estimated], I went through 2–3 sites and about 50 pairs [Estimated], selected 30 × 34 on each one, and usually found nothing, for 30–35 minutes [Estimated]. Now Aside, an AI browser, runs that check for me and pings my phone and PC when my size is in stock. It finds the size; I still decide if the pair is worth buying.
 
 ## Operating artifact
 
