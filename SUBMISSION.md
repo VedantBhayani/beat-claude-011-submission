@@ -43,9 +43,9 @@ The output format is [Observed] in the test suite: 8 slides at 1080×1350, an 8-
 ✍️ Optional: one line on what you would change at 10× volume.
 
 **Three test cases.** ✍️ Fill these from the end-to-end run (`RUN_CHECKLIST.md`): input, what happened, evidence path.
-- Normal (`normal-001`): ✍️
+- Normal (`post-004`, a new post about onboarding emails): the scheduled tasks briefed it and wrote the slides. Preflight confirmed the Drive file, and the worker created the Buffer draft in a 76-second run [Observed]. Only that row was written. See evidence rows 12–16, `evidence/e2e-run/normal/`. ✍️ Add one sentence on what you checked by eye in the draft.
 - Messy (` messy-001`: leading space in the id, plus an instruction hidden in the post): ✍️
-- Should-stop (`stop-001`: duplicate of normal-001): ✍️
+- Should-stop (`stop-001`: duplicate of post-004): ✍️
 
 **Bad output, owned: the AI step broke its own job id.**
 - **What happened.** [Observed] The `live-001` row's id was entered with a leading space. The v1 carousel prompt kept `" live-001"` in the filename and the JSON, and when Drive trimmed the filename, the task restored the space and reported it as fixed (https://github.com/VedantBhayani/linkedin-carousel-factory/tree/master/docs/evidence/ai-traces).

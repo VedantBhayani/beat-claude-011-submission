@@ -1,0 +1,9 @@
+# GitHub Actions run 38402544297: VedantBhayani/linkedin-carousel-factory, "Render LinkedIn Carousel"
+# started: 2026-10-13T13:08:00Z  finished: 2026-10-13T13:08:58Z  commit: d1e419c  conclusion: failure
+# https://github.com/VedantBhayani/linkedin-carousel-factory/actions/runs/38402544297
+# mode: run. The test step failed, so the worker step was skipped. Excerpt: the failing test and the totals.
+
+not ok 170 - real renderer produces verified draft_created end to end
+# tests 203
+# pass 202
+# fail 1

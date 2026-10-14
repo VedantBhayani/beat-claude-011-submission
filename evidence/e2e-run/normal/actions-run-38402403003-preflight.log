@@ -1,0 +1,15 @@
+# GitHub Actions run 38402403003: VedantBhayani/linkedin-carousel-factory, "Render LinkedIn Carousel"
+# started: 2026-10-13T13:06:53Z  finished: 2026-10-13T13:07:16Z  commit: d1e419c  conclusion: success
+# https://github.com/VedantBhayani/linkedin-carousel-factory/actions/runs/38402403003
+# mode: preflight. Excerpt: the preflight report lines, copied from gh run view --log (this log labels every step "UNKNOWN STEP", so lines were selected by content).
+
+Sheet1!2 test-001 archived
+Sheet1!3 test-002 archived
+Sheet1!4 launch-video-001 render_failed
+Sheet1!5 test-003 draft_failed
+Sheet1!6 live-001 draft_created
+Sheet1!7 post-004 carousel_created
+duplicate post_text: Sheet1!5, Sheet1!6 (all finished; informational)
+next: Sheet1!7 post-004 render
+result: ok
+payload: Drive file "post-004-carousel-v1.json" (application/json) matches
