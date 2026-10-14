@@ -3,9 +3,9 @@ post-004,worker run (render + Cloudinary + Buffer draft),2026-10-13T13:15:59Z,20
 messy-001,worker run (render + Cloudinary + Buffer draft),2026-10-14T08:43:25Z,2026-10-14T08:44:33Z,1.13,"[Observed] Actions run 38537139128, evidence/e2e-run/messy/actions-run-38537139128-worker.log"
 stop-001,brief task (stopped as needs_human),,2026-10-14T08:27:59Z,1.92,"[Observed] task report 'Worked for 1m 55s', evidence/e2e-run/should-stop/brief-report-stop-001.png; end = row updated_at in evidence/sheet/sheet-after-stop-001.csv"
 messy-001 (attempt 1),brief task (stopped as needs_human),,2026-10-14T08:19:45Z,1.08,"[Observed] task report 'Worked for 1m 5s', evidence/e2e-run/messy/brief-report-attempt-1-short-post.png; end = row updated_at in evidence/sheet/sheet-after-stop-001.csv"
-post-004,brief task,,,,TO ADD: 'Worked for' time from the ChatGPT task history
-post-004,carousel task,,,,TO ADD: 'Worked for' time from the ChatGPT task history
-messy-001,brief task,,,,TO ADD: 'Worked for' time from the ChatGPT task history
-messy-001,carousel task,,,,TO ADD: 'Worked for' time from the ChatGPT task history
+post-004,brief task,,,,not recorded
+post-004,carousel task,,,,not recorded
+messy-001,brief task,,,2.28,"[Observed] task report 'Worked for 2m 17s', evidence/e2e-run/messy/brief-report-messy-001.png"
+messy-001,carousel task,,,3.15,"[Observed] task report 'Worked for 3m 9s', evidence/e2e-run/messy/carousel-report-messy-001.png"
 post-004,human review of the Buffer draft,,,,TO MEASURE: time yourself reading and checking one draft
 manual,one carousel by hand (angle + 8 slides + PDF + Buffer upload),,,10-12,"[Estimated] owner's estimate from experience, not timed"

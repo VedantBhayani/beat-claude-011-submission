@@ -70,7 +70,7 @@ The [prototype repo](https://github.com/VedantBhayani/linkedin-carousel-factory/
 
 ## Evidence log
 
-`EVIDENCE_LOG.md` gives each claim with its tier and source. Tier 3 (logs and records): the three test runs, the live-001 failure (`evidence/actions-logs/`), 19 of 26 green runs with a failed worker [Observed, `worker-outcomes-in-green-runs.log`], and 203 tests that pass [Observed, `evidence/tests/`]. Tier 4 is not complete. The agent times in `evidence/e2e-run/before-after/timings.csv` are [Observed]: about 1 minute for a worker run and 1–2 minutes for a brief task. The manual time is an estimate. The machine time saved per post is small. The real gain: I only write the post and approve the draft.
+`EVIDENCE_LOG.md` gives each claim with its tier and source. Tier 3 (logs and records): the three test runs, the live-001 failure (`evidence/actions-logs/`), 19 of 26 green runs with a failed worker [Observed, `worker-outcomes-in-green-runs.log`], and 203 tests that pass [Observed, `evidence/tests/`]. Before and after (`evidence/e2e-run/before-after/timings.csv`): the agent made the messy-001 carousel in 6.6 minutes [Observed: brief 2.3 + carousel 3.2 + worker 1.1]. By hand, I need 10–12 minutes [Estimated, not timed]. The time saved is small. The real gain: I only write the post and approve the draft.
 
 ## Number source labels
 
