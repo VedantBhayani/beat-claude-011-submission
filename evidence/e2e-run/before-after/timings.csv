@@ -1,0 +1,11 @@
+case,step,start_utc,end_utc,minutes,source
+post-004,worker run (render + Cloudinary + Buffer draft),2026-10-13T13:15:59Z,2026-10-13T13:17:15Z,1.27,"[Observed] Actions run 38403575346, evidence/e2e-run/normal/actions-run-38403575346-worker.log"
+messy-001,worker run (render + Cloudinary + Buffer draft),2026-10-14T08:43:25Z,2026-10-14T08:44:33Z,1.13,"[Observed] Actions run 38537139128, evidence/e2e-run/messy/actions-run-38537139128-worker.log"
+stop-001,brief task (stopped as needs_human),,2026-10-14T08:27:59Z,1.92,"[Observed] task report 'Worked for 1m 55s', evidence/e2e-run/should-stop/brief-report-stop-001.png; end = row updated_at in evidence/sheet/sheet-after-stop-001.csv"
+messy-001 (attempt 1),brief task (stopped as needs_human),,2026-10-14T08:19:45Z,1.08,"[Observed] task report 'Worked for 1m 5s', evidence/e2e-run/messy/brief-report-attempt-1-short-post.png; end = row updated_at in evidence/sheet/sheet-after-stop-001.csv"
+post-004,brief task,,,,TO ADD: 'Worked for' time from the ChatGPT task history
+post-004,carousel task,,,,TO ADD: 'Worked for' time from the ChatGPT task history
+messy-001,brief task,,,,TO ADD: 'Worked for' time from the ChatGPT task history
+messy-001,carousel task,,,,TO ADD: 'Worked for' time from the ChatGPT task history
+post-004,human review of the Buffer draft,,,,TO MEASURE: time yourself reading and checking one draft
+manual,one carousel by hand (angle + 8 slides + PDF + Buffer upload),,,,TO MEASURE: time yourself making one carousel by hand from a new post
