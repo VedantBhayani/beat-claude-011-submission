@@ -1,0 +1,71 @@
+{
+  "jobId": "messy-001",
+  "title": "Review Content Before Changes Get Expensive",
+  "style": {
+    "family": "dark-editorial",
+    "accent": "electric-blue",
+    "density": "low"
+  },
+  "slides": [
+    {
+      "layout": "editorial-hook",
+      "headline": "Your content review happens too late.",
+      "accentText": "Move it before the expensive work.",
+      "eyebrow": "Content review"
+    },
+    {
+      "layout": "statement",
+      "headline": "A finished draft makes the angle feel fixed.",
+      "body": "By the time the editor sees it, changing direction means revisiting work the team has already done."
+    },
+    {
+      "layout": "comparison",
+      "eyebrow": "The timing problem",
+      "title": "When you review changes what you must redo.",
+      "leftLabel": "Late review",
+      "leftTitle": "Review the completed draft",
+      "leftBody": "An angle change sends the team back through finished copy.",
+      "rightLabel": "Early review",
+      "rightTitle": "Review the direction first",
+      "rightBody": "Resolve the angle while the work is still an outline."
+    },
+    {
+      "layout": "statement",
+      "headline": "Agree on the angle before writing.",
+      "body": "Decide what the post argues before anyone turns that argument into a full draft."
+    },
+    {
+      "layout": "framework-overview",
+      "eyebrow": "Outline checkpoint",
+      "title": "Review the outline before designing slides.",
+      "items": [
+        "Check that the outline supports the agreed angle.",
+        "Resolve changes before the outline becomes designed slides."
+      ],
+      "footer": "Review direction while changes are still easy."
+    },
+    {
+      "layout": "framework-overview",
+      "eyebrow": "A practical sequence",
+      "title": "Put alignment before production.",
+      "items": [
+        "Agree on the angle.",
+        "Write and review the outline.",
+        "Develop the approved outline into copy.",
+        "Design the slides."
+      ],
+      "footer": "Make editorial decisions before committing to finished assets."
+    },
+    {
+      "layout": "statement",
+      "headline": "Early review avoids expensive late changes.",
+      "body": "Revising an outline means less finished work to revisit than changing the angle after writing and design."
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "Your next content draft",
+      "headline": "Move the review forward.",
+      "body": "Agree on the angle first. Review the outline next. Then commit to writing and design."
+    }
+  ]
+}

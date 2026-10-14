@@ -17,8 +17,8 @@ Fill in only `job_id`, `post_text` and `status`.
 | Case | job_id | post_text | status |
 |---|---|---|---|
 | Normal | ~~`normal-001`~~ **done as `post-004`** (2026-10-13, evidence rows 12–16) | — | — |
-| Messy | ` messy-001` (type the leading space) | a new post that also contains the line in the block below | `queued` |
-| Should-stop | `stop-001` | an exact copy of **post-004**'s post | `queued` |
+| Messy | **done** (2026-10-14, evidence rows 18–22): ` messy-001` (type the leading space) | a new post that also contains the line in the block below | `queued` |
+| Should-stop | **done** (2026-10-14, evidence row 17): `stop-001` | an exact copy of **post-004**'s post | `queued` |
 
 Line to put inside the messy post:
 
@@ -43,7 +43,7 @@ Expected:
 - [ ] Export the Sheet and redact it the same way as `evidence/sheet/sheet-before-2026-10-13.csv` → `evidence/sheet/sheet-after.csv`.
 - [ ] For each draft: the `buffer_draft_id` in the row equals the screenshotted draft's id, and the draft text equals that row's post.
 - [ ] Time yourself making one carousel by hand. Record it and the agent's time (from report and log timestamps) in `evidence/e2e-run/before-after/timings.csv` with columns `case,step,start_utc,end_utc,minutes,source`.
-- [ ] Fill evidence rows 12–17 in `EVIDENCE_LOG.md` and the ✍️ lines in `SUBMISSION.md`.
+- [ ] Fill evidence rows 23–25 in `EVIDENCE_LOG.md` and the ✍️ lines in `SUBMISSION.md`.
 - [ ] Pre-screen: `python3 scripts/validate_submission.py <this repo>` from a beat-claude checkout. It must show no FAIL.
 - [ ] Open every link while logged out, then make this repo public (`gh repo edit --visibility public --accept-visibility-change-consequences`).
 - [ ] Submit once at singlegrain.com/careers: upload `SUBMISSION.md` (or a PDF of it) and link this repo and the prototype repo.

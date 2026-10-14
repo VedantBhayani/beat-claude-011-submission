@@ -1,0 +1,31 @@
+# GitHub Actions run 38537139128: VedantBhayani/linkedin-carousel-factory, "Render LinkedIn Carousel"
+# started: 2026-10-14T08:43:25Z  finished: 2026-10-14T08:44:33Z  commit: 2b69966  conclusion: success
+# https://github.com/VedantBhayani/linkedin-carousel-factory/actions/runs/38537139128
+# mode: run (no separate preflight run for this case). Excerpt: test totals, then the full output of the "Run production worker" step.
+
+2026-10-14T08:44:16.5765868Z # tests 203
+2026-10-14T08:44:16.5766135Z # suites 0
+2026-10-14T08:44:16.5766401Z # pass 203
+2026-10-14T08:44:16.5766665Z # fail 0
+2026-10-14T08:44:16.5766934Z # cancelled 0
+2026-10-14T08:44:16.5767218Z # skipped 0
+2026-10-14T08:44:16.5767492Z # todo 0
+2026-10-14T08:44:16.5881050Z ##[group]Run npm run worker
+2026-10-14T08:44:16.5881470Z [36;1mnpm run worker[0m
+2026-10-14T08:44:16.5917472Z shell: /usr/bin/bash -e ***0***
+2026-10-14T08:44:16.5917841Z env:
+2026-10-14T08:44:16.5927010Z   GOOGLE_SERVICE_ACCOUNT_JSON: ***
+
+2026-10-14T08:44:16.5927493Z   SHEET_SPREADSHEET_ID: ***
+2026-10-14T08:44:16.5927821Z   SHEET_NAME: Sheet1
+2026-10-14T08:44:16.5928140Z   CLOUDINARY_CLOUD_NAME: ***
+2026-10-14T08:44:16.5928487Z   CLOUDINARY_API_KEY: ***
+2026-10-14T08:44:16.5928862Z   CLOUDINARY_API_SECRET: ***
+2026-10-14T08:44:16.5929270Z   BUFFER_API_KEY: ***
+2026-10-14T08:44:16.5929612Z   BUFFER_CHANNEL_ID: ***
+2026-10-14T08:44:16.5930263Z ##[endgroup]
+2026-10-14T08:44:16.6828952Z 
+2026-10-14T08:44:16.6829719Z > linkedin-carousel-renderer@1.0.0 worker
+2026-10-14T08:44:16.6830765Z > node src/worker/production.js
+2026-10-14T08:44:16.6831197Z 
+2026-10-14T08:44:30.1431608Z ***"outcome":"draft_created","error":null,"jobId":"messy-001","stage":"draft"***

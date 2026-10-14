@@ -44,8 +44,8 @@ The output format is [Observed] in the test suite: 8 slides at 1080×1350, an 8-
 
 **Three test cases.** ✍️ Fill these from the end-to-end run (`RUN_CHECKLIST.md`): input, what happened, evidence path.
 - Normal (`post-004`, a new post about onboarding emails): the scheduled tasks briefed it and wrote the slides. Preflight confirmed the Drive file, and the worker created the Buffer draft in a 76-second run [Observed]. Only that row was written. See evidence rows 12–16, `evidence/e2e-run/normal/`. ✍️ Add one sentence on what you checked by eye in the draft.
-- Messy (` messy-001`: leading space in the id, plus an instruction hidden in the post): ✍️
-- Should-stop (`stop-001`: duplicate of post-004): ✍️
+- Messy (` messy-001`: leading space in the id, plus an instruction hidden in a 53-word post): the tasks used the trimmed id in the JSON, kept the instruction as post text and kept it off the slides. The worker created the Buffer draft. The leading space is still in the cell, and no other row changed [Observed]. My first attempt held only the instruction (8 words), so it was stopped as too short, which was correct but didn't test the id. See evidence rows 18–22, `evidence/e2e-run/messy/`. ✍️ Add one sentence on what you checked by eye.
+- Should-stop (`stop-001`: an exact copy of post-004): the brief task set `needs_human` with an error naming post-004, wrote no brief, and changed no other row [Observed]. See evidence row 17, `evidence/e2e-run/should-stop/`.
 
 **Bad output, owned: the AI step broke its own job id.**
 - **What happened.** [Observed] The `live-001` row's id was entered with a leading space. The v1 carousel prompt kept `" live-001"` in the filename and the JSON, and when Drive trimmed the filename, the task restored the space and reported it as fixed (https://github.com/VedantBhayani/linkedin-carousel-factory/tree/master/docs/evidence/ai-traces).
@@ -77,7 +77,7 @@ Full table with tiers and a checkable source per claim: `EVIDENCE_LOG.md` (https
 | Successful Buffer creates were misread as failures | Tier 3 | `evidence/actions-logs/run-37736480784.log`, LCF commit 0199033 |
 | Failed jobs were invisible: green runs whose worker had failed | Tier 3 | `evidence/actions-logs/worker-outcomes-in-green-runs.log` |
 | Wrong-row draft risk, reproduced by a regression test | Tier 3 | LCF `tests/worker/duplicate-post-text.test.js` |
-| Three test cases run end to end | ✍️ after the run | `evidence/e2e-run/` |
+| Three test cases run end to end: normal and messy reached a Buffer draft, should-stop stopped at the brief | Tier 3 | `evidence/e2e-run/`, `evidence/sheet/sheet-after-*.csv` |
 | Manual vs agent time per carousel | ✍️ Tier 4 after the run | `evidence/e2e-run/before-after/timings.csv` |
 
 ## Number source labels

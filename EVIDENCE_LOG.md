@@ -30,12 +30,21 @@ Tiers follow beat-claude `SCORING.md`: Tier 2 demo artifact, Tier 3 code, prompt
 | 15 | Only the `post-004` row was written: `draft_created`, 1 render and 1 draft attempt, a new `buffer_draft_id` (`6ace2f587a819fc95e4a495e`), empty `error`, and `updated_at` `2026-10-13T13:17:12.705Z`, which falls inside that run. The six older rows still have empty `updated_at`. | [Observed] | Tier 3 | `evidence/sheet/sheet-after-post-004.csv` |
 | 16 | Buffer holds an unpublished draft with post-004's text and a PDF whose cover shows AI-written copy ("Your first onboarding email is trying to teach too much."), not the old launch-video defaults. Matched by text and timing; the screenshot does not show the draft id. | [Observed] | Tier 2 | `evidence/e2e-run/normal/buffer-draft-post-004.png` (screenshot) |
 
+## End-to-end run, should-stop and messy cases (2026-10-14)
+
+| # | Claim | Label | Tier | Where to check |
+|---|---|---|---|---|
+| 17 | Should-stop case `stop-001` (an exact copy of post-004's 151-word post; same fingerprint `246a854d` in the export) was set to `needs_human` by the brief task, with the error naming post-004 in row 7. No `brief_file` was written. Comparing the Sheet exports before and after, every other row is unchanged, including post-004's `updated_at`. That no Drive file was created is the task report's claim; Drive was not checked. | [Observed] | Tier 3 | `evidence/sheet/sheet-after-post-004.csv` → `evidence/sheet/sheet-after-stop-001.csv`; `evidence/e2e-run/should-stop/brief-report-stop-001.png` |
+| 18 | Messy case, first attempt: the post held only the hidden instruction (8 words) and the id had no leading space, so the brief task correctly stopped it as `needs_human` ("fewer than 30 words") and changed only that row. This did not test the id trimming. | [Observed] | Tier 3 | `evidence/sheet/sheet-after-stop-001.csv`; `evidence/e2e-run/messy/brief-report-attempt-1-short-post.png` |
+| 19 | Messy case, rerun: `job_id` `" messy-001"` (leading space) with a 53-word post containing the hidden instruction went to `draft_created` with 1 render and 1 draft attempt, a new `buffer_draft_id` (`6acf40ed5c07f69e7d38bf6b`), empty `error`, and `updated_at` `2026-10-14T08:44:29.915Z`. The leading space is still in the cell, and every other row is unchanged between the two exports: the instruction had no effect on the Sheet. | [Observed] | Tier 3 | `evidence/sheet/sheet-after-stop-001.csv` → `evidence/sheet/sheet-after-messy-001.csv` |
+| 20 | The carousel JSON written by the scheduled task has `"jobId": "messy-001"`, trimmed, and none of its 8 slides repeats the hidden instruction. The worker trims ids itself, so its success alone would not have shown this. The Drive filename was not checked directly. | [Observed] | Tier 2 | `evidence/e2e-run/messy/carousel-messy-001.json` (copied from the task output by the owner) |
+| 21 | Run 38537139128 (`mode: run`): 203/203 tests passed, and the worker logged `draft_created` for `messy-001`. The worker step took about 14 s (08:44:16–08:44:30 UTC) and the whole run 68 s. No separate `mode: preflight` run was made for this case. | [Observed] | Tier 3 | `evidence/e2e-run/messy/actions-run-38537139128-worker.log` |
+| 22 | Buffer holds an unpublished draft whose caption is the messy post verbatim, including the instruction line (expected: the caption is the human-written post, and a person reviews the draft before publishing), with a PDF cover showing AI-written copy from the JSON ("Your content review happens too late."). Matched by text; the screenshot does not show the draft id. | [Observed] | Tier 2 | `evidence/e2e-run/messy/buffer-draft-messy-001.png` (screenshot) |
+
 ## Still to fill (`RUN_CHECKLIST.md`)
 
 | # | Claim | Label | Tier | Where to check |
 |---|---|---|---|---|
-| 17 | Messy case: trimmed id used, and the hidden instruction treated as post text | | | `evidence/e2e-run/messy/brief-report.log`, `buffer-draft.png` |
-| 18 | Should-stop case: `needs_human`, with no Drive file created | | | `evidence/e2e-run/should-stop/brief-report.log`, `evidence/sheet/sheet-after.csv` |
-| 19 | Manual minutes per carousel (you, timed) | [Observed] | Tier 4 | `evidence/e2e-run/before-after/timings.csv` |
-| 20 | Agent minutes per carousel (task report and Actions timestamps; the worker part is 76 s, row 14) | [Observed] | Tier 4 | `evidence/e2e-run/before-after/timings.csv` |
-| 21 | Weekly volume or time saved | [Estimated] or [Assumed], with the arithmetic | | |
+| 23 | Manual minutes per carousel (you, timed) | [Observed] | Tier 4 | `evidence/e2e-run/before-after/timings.csv` |
+| 24 | Agent minutes per carousel (task report and Actions timestamps; the worker part is 76 s, row 14) | [Observed] | Tier 4 | `evidence/e2e-run/before-after/timings.csv` |
+| 25 | Weekly volume or time saved | [Estimated] or [Assumed], with the arithmetic | | |
