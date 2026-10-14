@@ -3,7 +3,7 @@
 **Intern 011, Option D (my own workflow). Brief version: 2026-07.**
 - **Prototype:** [linkedin-carousel-factory](https://github.com/VedantBhayani/linkedin-carousel-factory/tree/2b6996650bd61c0002c5d0f3135772cbead14347) at commit `2b69966`, the code of all three test runs.
 - **Evidence:** [beat-claude-011-submission](https://github.com/VedantBhayani/beat-claude-011-submission). Every `evidence/` path below is there; `EVIDENCE_LOG.md` lists each claim with its source.
-- **Demo (under 5 min):** [Loom](LOOM_LINK_HERE).
+- **Demo:** [Loom walkthrough](https://www.loom.com/share/5ba2d9d93594494cb5803db3e5f8524c).
 
 ## Written answer
 
