@@ -27,7 +27,7 @@
 5. The worker puts the files in Cloudinary and saves an unpublished Buffer draft.
 6. I read the draft and publish it myself.
 
-**Architecture.** Google Sheet → ChatGPT scheduled tasks ✍️ *(model)* → JSON in Google Drive → GitHub Actions worker → Cloudinary → Buffer GraphQL API (drafts only). The secrets are in GitHub Actions only, so the tasks cannot call Cloudinary or Buffer. AI does the judgment work: the angle, the text, the decision to stop. Code does the work that must be correct each time: names, limits, render, API calls, retries.
+**Architecture.** Google Sheet → ChatGPT scheduled tasks (GPT-5.6 Terra) → JSON in Google Drive → GitHub Actions worker → Cloudinary → Buffer GraphQL API (drafts only). The secrets are in GitHub Actions only, so the tasks cannot call Cloudinary or Buffer. AI does the judgment work: the angle, the text, the decision to stop. Code does the work that must be correct each time: names, limits, render, API calls, retries.
 
 **Edge cases.**
 
@@ -78,7 +78,7 @@ Each number has a label: [Observed], [Estimated], [Benchmarked] or [Assumed]. Th
 
 ## AI usage disclosure
 
-- **ChatGPT scheduled tasks** ✍️ *(model)*: run the two prompts in production. I wrote the rules and compared each report with the Sheet.
+- **ChatGPT scheduled tasks** (GPT-5.6 Terra, medium effort, daily at 09:00 India time; `evidence/e2e-run/scheduled-task-settings.png`): run the two prompts. I wrote the rules and compared each report with the Sheet.
 - **Claude (web):** helped me write the v1 prompts. ✍️ *What you changed.*
 - **Codex:** worked on some tickets (branch `codex/reference-ingestion`). ✍️ *What it did.*
 - **Claude Code:** examined and repaired the worker and prompts on 2026-10-13 (18 of 57 commits [Observed, [history](https://github.com/VedantBhayani/linkedin-carousel-factory/commits/2b6996650bd61c0002c5d0f3135772cbead14347)]), and helped me write this packet and edit Part 1. I selected the repairs, did each live test, and compared each claim with a log.
