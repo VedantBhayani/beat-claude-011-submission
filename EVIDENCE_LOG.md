@@ -45,6 +45,6 @@ Tiers follow beat-claude `SCORING.md`: Tier 2 demo artifact, Tier 3 code, prompt
 
 | # | Claim | Label | Tier | Where to check |
 |---|---|---|---|---|
-| 23 | Manual minutes per carousel (you, timed) | [Observed] | Tier 4 | `evidence/e2e-run/before-after/timings.csv` |
+| 23 | Manual time per carousel: 10–12 minutes. This is the owner's estimate from experience; it was not timed. | [Estimated] | Tier 0 until timed | `evidence/e2e-run/before-after/timings.csv` |
 | 24 | Agent minutes per carousel. Recorded so far [Observed]: worker runs of 1.27 min (post-004) and 1.13 min (messy-001), and brief tasks of 1.92 min and 1.08 min for the two stopped rows. Still missing: the brief and carousel task times for the two full runs, and human review time. | [Observed] | Tier 4 when complete | `evidence/e2e-run/before-after/timings.csv` |
-| 25 | Weekly volume or time saved | [Estimated] or [Assumed], with the arithmetic | | |
+| 25 | Weekly manual time: 3–4 posts a week × 10–12 minutes = 30–48 minutes a week. | [Estimated] | Tier 0 | arithmetic from rows 23 and the owner's posting rate |

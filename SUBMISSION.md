@@ -16,7 +16,7 @@
 
 ### Part 2: The workflow
 
-**The manual process.** I write a LinkedIn post. Then I make an 8-slide carousel by hand: angle, slide text, design, PDF, and upload to Buffer. ✍️ *Your timed minutes for one carousel ([Observed], in `evidence/e2e-run/before-after/timings.csv`), and how frequently you post ([Estimated]).*
+**The manual process.** I write a LinkedIn post. Then I make an 8-slide carousel by hand: angle, slide text, design, PDF, and upload to Buffer. One carousel takes me 10–12 minutes [Estimated, from experience, not timed]. I post 3–4 times each week [Estimated], so this is 30–48 minutes each week [Estimated: 3 × 10 to 4 × 12].
 
 **What the agent does.** One Google Sheet row is one job. The `status` cell of the row shows the step.
 
@@ -70,7 +70,7 @@ The [prototype repo](https://github.com/VedantBhayani/linkedin-carousel-factory/
 
 ## Evidence log
 
-`EVIDENCE_LOG.md` gives each claim with its tier and source. Tier 3 (logs and records): the three test runs, the live-001 failure (`evidence/actions-logs/`), 19 of 26 green runs with a failed worker [Observed, `worker-outcomes-in-green-runs.log`], and 203 tests that pass [Observed, `evidence/tests/`]. Tier 4: manual against agent minutes in `evidence/e2e-run/before-after/timings.csv` [Observed]. ✍️ *Add your manual time and one sentence that compares the two.*
+`EVIDENCE_LOG.md` gives each claim with its tier and source. Tier 3 (logs and records): the three test runs, the live-001 failure (`evidence/actions-logs/`), 19 of 26 green runs with a failed worker [Observed, `worker-outcomes-in-green-runs.log`], and 203 tests that pass [Observed, `evidence/tests/`]. Tier 4 is not complete. The agent times in `evidence/e2e-run/before-after/timings.csv` are [Observed]: about 1 minute for a worker run and 1–2 minutes for a brief task. The manual time is an estimate. The machine time saved per post is small. The real gain: I only write the post and approve the draft.
 
 ## Number source labels
 
