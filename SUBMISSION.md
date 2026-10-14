@@ -62,7 +62,7 @@ Files: `evidence/e2e-run/<case>/` and the Sheet exports in `evidence/sheet/` (sa
 
 ### Part 3: The meta question
 
-I am tall and thin: my size is 30 waist, 34 length. Most brand sites have no length filter. So once a week [Estimated], I opened 2–3 brand sites, opened each pair of jeans or trousers (about 50 [Estimated]), selected 30 × 34, and looked for stock. Now an AI browser agent does this search and sends an alert to my phone and PC when my size is in stock. The agent finds the size. I decide if I like the pair.
+My most repetitive task was my legs. I am tall and thin (30 waist, 34 length), and most brand sites seem sure that nobody is, because they have no length filter. So once a week [Estimated], I opened 2–3 brand sites, clicked into each pair of jeans or trousers (about 50 [Estimated]), selected 30 × 34, and usually found nothing, for 30–35 minutes each time [Estimated]. Now Aside, an AI browser, does this search and sends an alert to my phone and PC when my size is in stock. The agent finds the size; I decide if the pair is worth it.
 
 ## Operating artifact
 
