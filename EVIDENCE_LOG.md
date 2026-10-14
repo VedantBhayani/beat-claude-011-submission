@@ -2,15 +2,15 @@
 
 Tiers follow beat-claude `SCORING.md`: Tier 2 demo artifact, Tier 3 code, prompts, inputs and logs a reviewer can trace, Tier 4 measured before/after, Tier 5 independent verification. Every number carries a source label.
 
-**LCF** = https://github.com/VedantBhayani/linkedin-carousel-factory. Run links have the form `https://github.com/VedantBhayani/linkedin-carousel-factory/actions/runs/<id>`.
+**LCF** = https://github.com/VedantBhayani/linkedin-carousel-factory. File links are pinned to commit `2b69966` (https://github.com/VedantBhayani/linkedin-carousel-factory/tree/2b6996650bd61c0002c5d0f3135772cbead14347), the code the 2026-10-13/14 test runs used. Run links have the form `https://github.com/VedantBhayani/linkedin-carousel-factory/actions/runs/<id>`.
 
 ## Verified on 2026-10-13
 
 | # | Claim | Label | Tier | Where to check |
 |---|---|---|---|---|
 | 1 | The worker created a Buffer draft in production at least once: run 37763450842 (2026-10-08 10:26 UTC) logged `"outcome":"draft_created"`. That log does not name the job; the job id has been logged since LCF commit 5d2c6bc. | [Observed] | Tier 3 | `evidence/actions-logs/run-37763450842.log` |
-| 2 | **Bad output from the AI step.** The v1 carousel prompt kept a leading space in `" live-001"` and restored it after Drive trimmed the filename. The worker rejected the job twice: `invalid_filename`, then `jobid_mismatch`. | [Observed] | Tier 3 | https://github.com/VedantBhayani/linkedin-carousel-factory/tree/master/docs/evidence/ai-traces, `evidence/actions-logs/run-37735537490.log`, `run-37735894619.log` |
-| 3 | Fix for #2: the worker compares trimmed ids and rejects ids unsafe for storage paths (LCF commit 8822c4b, `tests/worker/job-id-contract.test.js`). The v2 prompts trim and validate the id. | [Observed] | Tier 3 | LCF commit 8822c4b; https://github.com/VedantBhayani/linkedin-carousel-factory/tree/master/prompts |
+| 2 | **Bad output from the AI step.** The v1 carousel prompt kept a leading space in `" live-001"` and restored it after Drive trimmed the filename. The worker rejected the job twice: `invalid_filename`, then `jobid_mismatch`. | [Observed] | Tier 3 | https://github.com/VedantBhayani/linkedin-carousel-factory/tree/2b6996650bd61c0002c5d0f3135772cbead14347/docs/evidence/ai-traces, `evidence/actions-logs/run-37735537490.log`, `run-37735894619.log` |
+| 3 | Fix for #2: the worker compares trimmed ids and rejects ids unsafe for storage paths (LCF commit 8822c4b, `tests/worker/job-id-contract.test.js`). The v2 prompts trim and validate the id. | [Observed] | Tier 3 | LCF commit 8822c4b; https://github.com/VedantBhayani/linkedin-carousel-factory/tree/2b6996650bd61c0002c5d0f3135772cbead14347/prompts |
 | 4 | Before LCF commit 0199033, every successful Buffer create was reported as "unknown Buffer error": the mutation did not request `__typename`, but the code required it. Runs 37736480784 and 37762672473 logged exactly that. | [Observed] | Tier 3 | `evidence/actions-logs/run-37736480784.log`, `run-37762672473.log`; https://github.com/VedantBhayani/linkedin-carousel-factory/commit/0199033 |
 | 5 | Those runs created real duplicate `live-001` drafts in Buffer. The Sheet stores one draft id, `6ac76e61deb9a4752cef8bdc`. | Unverified until a screenshot of the `live-001` drafts exists | — | `evidence/e2e-run/` (to add) |
 | 6 | `external:unknown` on launch-video-001: the Cloudinary Admin API rejected with a plain object (`thrown=Object message=`), and the 500-character log cut hid its HTTP status. | [Observed] | Tier 3 | `evidence/actions-logs/run-37660483439.log`; LCF `docs/evidence/fix6-external-unknown.md` |
